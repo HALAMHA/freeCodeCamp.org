@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      
+        <h1 id="title">Starting with Frontend Development</h1>
+        <p id="description">
+        Thank you for filling in this form, it will help us to provide support for
+        beginners.
+        </p>
+        <form id="survey-form">
+        
+        <div class="form-item">
+          <label for="name" id="name-label">Name</label><br />
+          <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+          />
+        </div>
+  
+        <div class="form-item">
+          <label for="email" id="email-label">Email</label><br />
+          <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          />
+        </div>
+  
+        <div class="form-item">
+          <label for="age" id="number-label">Age</label><br />
+          <input
+          type="number"
+          id="number"
+          name="age"
+          min="6"
+          max="100"
+          placeholder="Age"
+          required
+          />
+        </div>
+  
+        <div class="form-item">
+          <label for="job" id="dropdown-label">Current job</label><br />
+          <select id="dropdown" name="job">
+          <option value="it">I am working in IT</option>
+          <option value="other">I am working in other field than IT</option>
+          <option value="unemployed">I am unemployed</option>
+          <option value="student">I am a student</option>
+          </select>
+        </div>
+  
+        <div class="form-item">
+          <p class="question">Is your goal to work in IT?</p>
+          <input type="radio" id="future-yes" name="future" value="yes" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="future-no" name="future" value="no" />
+          <label for="no">No</label><br />
+          <input type="radio" id="future-maybe" name="future" value="maybe" />
+          <label for="maybe">Not sure</label>
+        </div>
+  
+        <div class="form-item">
+          <p class="question">What is your main source for learning developer skills?</p>
+          <input type="checkbox" id="school" name="sources" value="school"/>
+          <label for="school">School</label><br>
+          <input type="checkbox" id="bootcamp" name="sources" value="bootcamp"/>
+          <label for="bootcamp">Bootcamp</label><br>
+          <input type="checkbox" id="online" name="sources" value="online-courses"/>
+          <label for="online">Online courses</label><br>
+          <input type="checkbox" id="other" name="sources" value="other"/>
+          <label for="other">Other</label>
+        </div>
+  
+        <div class="form-item">
+          <p class="question">Feel free to leave us a comment or suggestion on how to learn new skills.</p>
+          <textarea name="comment" id="comment" rows="10" cols="30"></textarea><br><br>
+        </div>
+  
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+    </body>
+  </html>

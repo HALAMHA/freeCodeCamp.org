@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url("https://images.freeimages.com/images/large-previews/ba7/formica-wood-texture-1544987.jpg");
+  background-color: bisque;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: bisque;
+}
+
+img {
+  max-height: 75px;
+}
+
+a {
+  text-decoration: none;
+  color: #00802b;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ul {
+  margin-top: 15px;
+}
+
+li {
+  display: inline-block;
+  padding: 15px;
+}
+
+main {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 95px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#email,
+#submit {
+  max-width: 50%;
+  padding: 2px;
+  font-size: 14px;
+}
+
+#submit {
+  color: white;
+  background-color: #00802b;
+  width: 60px;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.furniture {
+  border: 1px solid grey;
+  border-radius: 2px;
+  font-size: 12px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: #333333;
+  box-shadow: 1px 1px 8px black;
+}
+
+#table {
+  margin: 0 8px;
+}
+
+h2 {
+  color: white;
+  background-color: #00802b;
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  background-color: #00802b;
+  padding: 3px;
+  width: 100%;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    max-height: 170px;
+  }
+
+  main {
+    margin: 8px;
+  }
+
+  #video {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
+  a {
+    flex-direction: column;
+  }
+}

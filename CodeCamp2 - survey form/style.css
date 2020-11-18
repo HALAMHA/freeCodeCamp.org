@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #008080;
+  background-image: url("laptop.jpg");
+}
+
+.container {
+  max-width: 575px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: white;
+}
+
+form {
+  background-color: #004d4d;
+  padding: 5%;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px #000000;
+  color: whitesmoke;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+.form-item {
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comment,
+#submit {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  height: 25px;
+}
+
+#comment {
+  min-height: 85px;
+}
+
+.question {
+  margin-bottom: 5px;
+}
+
+#submit {
+  background-color: #80002a;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 3px;
+  height: 30px;
+}
+
+#name:focus,
+#email:focus,
+#number:focus,
+#dropdown:focus,
+#comment:focus {
+  outline: solid lightgreen;
+  border: none;
+}
