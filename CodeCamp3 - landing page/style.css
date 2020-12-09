@@ -1,51 +1,51 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin: 0;
-  background-image: url("https://images.freeimages.com/images/large-previews/ba7/formica-wood-texture-1544987.jpg");
-  background-color: bisque;
+  background: #fff4e6;
 }
 
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  max-height: 80px;
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
-  background-color: bisque;
 }
 
-img {
-  max-height: 75px;
+header img {
+  width: auto;
+  margin-left: 10px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-right: 20px;
 }
 
 a {
   text-decoration: none;
-  color: #00802b;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-ul {
-  margin-top: 15px;
-}
-
-li {
-  display: inline-block;
-  padding: 15px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 main {
-  box-sizing: border-box;
   max-width: 600px;
   margin: 0 auto;
 }
 
 h1 {
   text-align: center;
-  margin-top: 95px;
+  margin-top: 130px;
+  font-size: 27px;
 }
 
 #form {
@@ -60,7 +60,7 @@ h1 {
 #submit {
   max-width: 50%;
   padding: 2px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #submit {
@@ -69,10 +69,13 @@ h1 {
   width: 60px;
 }
 
+#video {
+  width: 100%;
+}
+
 .offer {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 35px;
+  margin: 30px 0;
 }
 
 .furniture {
@@ -85,44 +88,78 @@ h1 {
   box-shadow: 1px 1px 8px black;
 }
 
-#table {
-  margin: 0 8px;
-}
-
 h2 {
   color: white;
   background-color: #00802b;
   text-align: center;
   margin: 0;
+  padding: 3px;
+}
+
+p {
+  font-size: 14px;
+}
+
+#text-section {
+  margin: 40px 0;
+}
+
+#table {
+  margin: 0 10px;
 }
 
 footer {
   text-align: center;
-  font-size: 12px;
-  background-color: #00802b;
-  padding: 3px;
-  width: 100%;
-  margin: 0;
+  padding: 5px;
+  background-color: bisque;
+  margin-bottom: 0;
+  margin-top: 15px;
+  height: 5vh;
+}
+
+footer p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+header,
+footer {
+  background-image: url(tree.jpg);
 }
 
 @media only screen and (max-width: 600px) {
-  header {
-    max-height: 170px;
-  }
-
   main {
-    margin: 8px;
+    margin: 12px;
   }
 
-  #video {
-    width: 100%;
-    height: auto;
+  header img {
+    max-height: 60px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin: 3px;
+  }
+
+  li {
+    margin: 5px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .offer {
+    flex-direction: column;
+  }
+
+  #table {
+    margin: 10px 0;
   }
 
   footer {
     margin-bottom: 0;
-  }
-  a {
-    flex-direction: column;
   }
 }
