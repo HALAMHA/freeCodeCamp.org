@@ -2,21 +2,7 @@ body {
   box-sizing: border-box;
   font-family: Helvetica, Georgia, serif;
   margin: 0px auto;
-}
-
-#navbar {
-  border-right: 3px solid lightgrey;
-  min-width: 180px;
-}
-
-main {
-  margin: 25px;
-}
-
-header {
-  font-size: 23px;
-  padding-top: 12px;
-  text-align: left;
+  display: flex;
 }
 
 #theme {
@@ -25,8 +11,19 @@ header {
   padding-right: 15px;
 }
 
-a:link,
-a:visited {
+#navbar {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid lightgrey;
+  min-width: 180px;
+}
+
+ul {
+  font-size: 14px;
+  color: #333333;
+}
+
+.nav-link {
   border-top: 1px solid grey;
   margin-left: 0px;
   padding-left: 28px;
@@ -35,6 +32,16 @@ a:visited {
   text-decoration: none;
   font-size: 15px;
   color: #333333;
+}
+
+header {
+  font-size: 23px;
+  padding-top: 12px;
+  text-align: left;
+}
+
+main {
+  margin: 25px;
 }
 
 .code {
@@ -51,38 +58,62 @@ p {
   color: #333333;
 }
 
-ul {
-  font-size: 14px;
-  color: #333333;
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 767px) {
   body {
-    display: flex;
+    flex-direction: column;
   }
 
   #navbar {
-    display: block;
+    flex-direction: row;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #bfbfbf;
   }
 
-  a {
-    display: block;
+  header {
+    font-size: 18px;
+  }
+
+  #theme {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    border: none;
+    padding: 3px;
+    margin: 8px;
+  }
+
+  section {
+    margin-top: 15px;
+  }
+
+  main {
+    margin: 20px;
+  }
+
+  p {
+    font-size: 13px;
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #navbar {
+    min-width: 160px;
+    text-align: center;
+  }
+
   #theme {
     text-align: center;
-    border-bottom: 2px solid lightgrey;
   }
 
-  #navbar {
-    border-right: none;
-    border-bottom: 2px solid lightgrey;
+  .nav-link {
+    padding-left: 0;
   }
 
-  a:link,
-  a:visited {
-    border-top: none;
+  header {
+    font-size: 20px;
   }
 }
